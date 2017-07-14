@@ -1,10 +1,10 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Strata"
+title = "Asim K T | Front End Developer | Human Being "
 theme = "hugo-strata-theme"
-disqusShortname = "spf13"
+disqusShortname = "my-online-presence"
 # Enable Google Analytics by inserting your tracking code
-googleAnalytics = ""
+googleAnalytics = "UA-102598696-1"
 # Define how many posts should appear on a site
 paginate = 10
 
@@ -19,7 +19,7 @@ paginate = 10
 
 	# Add custom assets with their paths relative to the static folder
 	custom_js   = []
-	custom_css  = []
+	custom_css  = ['css/style.css']
 
 
 	[params.sidebar]
@@ -37,7 +37,7 @@ paginate = 10
 		linkedin = "https://in.linkedin.com/in/asim-kt-096b4159"
 
 		copyright = [
-			"&copy; Asim K T",
+			"&copy; Asim K. T.",
 			"Design: [Asim  K T](//asimkt.in) with [Victor Hugo](//github.com/netlify/victor-hugo)",
 			"Demo Images: [Unsplash](//unsplash.com/)"
 		]

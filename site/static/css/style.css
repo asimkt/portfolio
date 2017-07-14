@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Condensed');
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.header.major h2 {
+	font-family: 'Raleway', sans-serif;
+}
