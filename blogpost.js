@@ -7,27 +7,54 @@ import Layout from './layout'
 import { BodyRenderer,
   textRenderer } from "@phenomic/preset-react-app/lib/client";
 
-const BlogPost = ({ isLoading, page }) => (
-  <Layout>
-    {isLoading && "Loading..."}
-    {!isLoading &&
-    page.node && (
-      <article>
-        <Head>
-          <title>{page.node.title}</title>
-          <meta
-            name="description"
-            content={textRenderer(page.node.body).slice(0, 150) + "…"}
-          />
-        </Head>
-        <h1>{page.node.title}</h1>
-        <BodyRenderer>{page.node.body}</BodyRenderer>
-      </article>
-    )}
-    <footer>
-      <Link to="/">Go to front page</Link>
-    </footer>
-  </Layout>
+
+const DefaultPostLayout = ({ title, body }) => (
+  <article>
+    <Head>
+      <title>{title}</title>
+      <meta
+        name="description"
+        content={textRenderer(body).slice(0, 150) + "…"}
+      />
+    </Head>
+    <h1>{title}</h1>
+    <BodyRenderer>{body}</BodyRenderer>
+  </article>
 );
+
+const HeroPostLayout = ({ title, body }) => (
+  <article>
+    <Head>
+      <title>{title}</title>
+      <meta
+        name="description"
+        content={textRenderer(body).slice(0, 150) + "…"}
+      />
+    </Head>
+    <div style={{ padding: "4rem", background: "pink", color: "#fff" }}>
+      <h1>{title}</h1>
+    </div>
+    <BodyRenderer>{body}</BodyRenderer>
+  </article>
+);
+
+const PostLayouts = {
+  default: DefaultPostLayout,
+  hero: HeroPostLayout
+};
+
+const BlogPost = ({ isLoading, page }) => {
+  const PostLayout =
+    (page.node && PostLayouts[page.node.layout]) || PostLayouts.default;
+  return (
+    <Layout>
+      {isLoading && "Loading..."}
+      {!isLoading && page.node && <PostLayout {...page.node} />}
+      <footer>
+        <Link to="/">Go to home</Link>
+      </footer>
+    </Layout>
+  );
+};
 
 export default BlogPost
