@@ -4,7 +4,8 @@ import Head from "react-helmet";
 
 import { createApp,
   createContainer,
-  query} from "@phenomic/preset-react-app/lib/client";
+  query,
+  renderApp} from "@phenomic/preset-react-app/lib/client";
 
 import Home from './home'
 import BlogPost from './blogpost'
@@ -15,10 +16,14 @@ const HomeContainer = createContainer(Home, props => ({
   posts: query({ path: "posts", limit: 2, after: props.params.after })
 }));
 
-export default createApp(() => (
-  <Router history={browserHistory}>
+const routes = () => <Router history={browserHistory}>
     <Route path="/" component={HomeContainer} />
     <Route path="/after/:after" component={HomeContainer} />
     <Route path="/blog/*" component={BlogPostContainer} />
   </Router>
-));
+
+export default createApp(routes);
+
+if (module.hot) {
+  module.hot.accept(() => renderApp(routes));
+}
