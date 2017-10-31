@@ -9,6 +9,7 @@ import { createApp,
 
 import Home from './home'
 import BlogPost from './blogpost'
+import PageError from './components/pageerror'
 
 import BlogPostContainer from './blogpost-container'
 
@@ -20,6 +21,7 @@ const routes = () => <Router history={browserHistory}>
     <Route path="/" component={HomeContainer} />
     <Route path="/after/:after" component={HomeContainer} />
     <Route path="/blog/*" component={BlogPostContainer} />
+    <Route path="*" component={PageError} />
   </Router>
 
 export default createApp(routes);

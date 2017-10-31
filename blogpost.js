@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router";
 import Head from "react-helmet";
-import Layout from './layout'
-
 
 import { BodyRenderer,
   textRenderer } from "@phenomic/preset-react-app/lib/client";
+
+import PageError from './components/pageerror'
+import Layout from './layout'
 
 
 const DefaultPostLayout = ({ title, body }) => (
@@ -43,7 +44,10 @@ const PostLayouts = {
   hero: HeroPostLayout
 };
 
-const BlogPost = ({ isLoading, page }) => {
+const BlogPost = ({ hasError, isLoading, page }) => {
+  if (hasError) {
+    return <PageError error={page.error} />;
+  }
   const PostLayout =
     (page.node && PostLayouts[page.node.layout]) || PostLayouts.default;
   return (
