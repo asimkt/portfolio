@@ -1,5 +1,6 @@
-node_modules/
-dist/
-npm-debug.log
-.DS_Store
-site/.DS_Store
+# node / npm
+node_modules
+*.log
+
+# phenomic build
+dist
