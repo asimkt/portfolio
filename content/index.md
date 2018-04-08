@@ -1,44 +1,32 @@
 ---
-title: Phenomic base theme
+title: Hi, I'm Asim KT.
 layout: Homepage
 hero: https://farm4.staticflickr.com/3949/15589950511_3675b15e59_k.jpg
 # hero credit: https://www.flickr.com/photos/pslee999/15589950511/
 cta:
-  label: About this theme
-  link: "about"
+  label: Checkout my projects
+  link: "https://github.com/asimkt?tab=repositories"
 ---
 
-Hi there. Before having fun with Phenomic, be sure to read the documentation :
+Hi there.
 
-* [How to setup a new project with Phenomic](https://phenomic.io/docs/setup/)
-* [Getting Started with Phenomic](https://phenomic.io/docs/getting-started/)
-* [Usage & APIs](https://phenomic.io/docs/usage/)
-* [FAQ](https://phenomic.io/docs/faq/)
+My name's Asim KT. I'm a front end developer from Bangalore, India and Welcome to my site.
 
-Also take a look at
-[existing websites that use Phenomic](https://phenomic.io/showcase/),
-some projects share their source code!
+This site uses [Phenomic - A static site generator](https://phenomic.io/) and the code for this site is available at
+[this GitHub repository](https://github.com/asimkt/portfolio)
 
-<!-- demo to show you that you can use "assets" folder -->
-<small>
-  Built with
-  <a href="https://facebook.github.io/react/">
-    <img alt="" src="assets/react.svg" width="16" height="16" />
-    React
-  </a>.
-</small>
+<h3>About me</h3>
 
----
+I work with HTML, CSS and JavaScript. My current projects used ReactJS as the view-library and I'm lovin' it.
+I like eating and making food, Malabar Chicken curry being my special item.
 
-You may want to take a look at the [404.html](/404.html) and tweak the render.
+I'm a front-end developer at [Quintype Inc](http://quintype.com/) where I create web-applications for different digital publishers like
+[TheQuint](http://thequint.com/) and [BloombergQuint](http://bloombergquint.com/).
 
-If you need to make adjustments, you can directly alter page layouts in
-``src/layouts/``;
-small things like the header, footer, buttons and so on can be changed in
-``src/components/``;
-and for colors and common CSS variables, you can modify ``postcss.config.js``.
+In my free time, I created things like:
 
-_You feel like the base theme is not enough or you just saw something wrong?_
-[Please help us make Phenomic better!](https://phenomic.io/contributing/)
+* [Zpeed](zpeed.in) : A Progressive Web App (PWA) for seeing your realtime speed in km/h. Sure to check this out when you go cycling next time.
+* [Image Baker](img-bak.in) : A tool for Android & iOS devs to create their assets in all sizes needed.
+* [Heic converter](converter.asimkt.com): A tool to convert the new iPhone Heic format to Jpeg.
 
 ---
