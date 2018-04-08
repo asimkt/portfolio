@@ -34,7 +34,7 @@ const Header = (props, { metadata: { pkg } }) => (
         {
           pkg.linkedin &&
           <a
-            href={ `https://www.linkedin.com/in//${pkg.linkedin}` }
+            href={ `https://www.linkedin.com/in/${pkg.linkedin}` }
             className={ styles.link }
           >
             <Svg svg={ twitterSvg } cleanup />
