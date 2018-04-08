@@ -7,8 +7,19 @@
   opacity: 0.6;
   color: inherit;
   text-decoration: none;
+  margin: 10px 0;
 }
 
 .phenomicReferenceName {
   font-weight: 100;
+}
+
+.siteReferenceWrapper {
+  margin: 5px 0;
+}
+
+.siteReference {
+  /* stylelint-disable */
+  composes: phenomicReference;
+  /* stylelint-enable */
 }
