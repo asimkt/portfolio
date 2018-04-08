@@ -1,32 +1,20 @@
 ---
-title: About Phenomic base theme
+title: About Asim K T
 hero: https://farm4.staticflickr.com/3949/15589950511_3675b15e59_k.jpg
 # hero credit: https://www.flickr.com/photos/pslee999/15589950511/
 cta:
-  label: Discover Phenomic now
-  link: "https://phenomic.io/"
+  label: Checkout my projects
+  link: "https://github.com/asimkt?tab=repositories"
   props:
     big: true
 ---
 
-You are currently viewing Phenomic base theme.
+Hi there.
 
-For now [Phenomic does not provide a native way to extend themes](https://github.com/MoOx/phenomic/issues/508) but since it's based on
-React and uses a component approach, it's pretty easy to make your own reusable collection of layouts and components.
+My name's Asim KT. I'm a front end developer from Bangalore, India and Welcome to my site.
 
----
+I work with HTML, CSS and JavaScript. My current projects used ReactJS as the view-library and I'm lovin' it.
+I like eating and making food, Malabar Chicken curry being my special item.
 
-This website is made with [Phenomic](https://phenomic.io/).
-
-If you are curious about it, you can take a look at
-[existing websites that use Phenomic](https://phenomic.io/showcase/),
-some projects share their source code!
-
-<!-- demo to show you that you can use "assets" folder -->
-<small>
-  Built with
-  <a href="https://facebook.github.io/react/">
-    <img alt="" src="../assets/react.svg" width="16" height="16" />
-    React
-  </a>.
-</small>
+I'm a front-end developer at [Quintype Inc](http://quintype.com/) where I create web-applications for different digital publishers like
+[TheQuint](http://thequint.com/) and [BloombergQuint](http://bloombergquint.com/).
