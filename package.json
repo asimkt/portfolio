@@ -3,6 +3,10 @@
   "name": "asimkt",
   "homepage": "https://asimkt.com",
   "twitter": "KTAsim",
+  "linkedin": "asimkt",
+  "stackoverflow": "4015856",
+  "medium": "KTAsim",
+  "instagram": "ktazm",
   "repository": "https://github.com/asimkt/portfolio",
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
