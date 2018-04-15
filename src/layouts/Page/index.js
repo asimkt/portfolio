@@ -50,20 +50,23 @@ const Page = (
     { name: "description", content: head.description },
   ]
 
+  let heroClasses = [styles.header];
+  if(head.layout === 'Homepage')
+    heroClasses.push(styles['header-full-height']);
   return (
     <div className={ styles.page }>
       <Helmet
         title={ metaTitle }
         meta={ meta }
       />
-      {
+      { !head.hideHero &&
         <div
           className={ styles.hero }
           style={ head.hero && {
-            background: `#111 url(${ head.hero }) 50% 50% / cover`,
+            background: `#111 url(${ head.hero }) 50% 50% / cover`
           } }
         >
-          <div className={ styles.header }>
+          <div className={ heroClasses.join(' ') }>
             <div className={ styles.wrapper }>
               <h1 className={ styles.heading }>{ head.title }</h1>
               {

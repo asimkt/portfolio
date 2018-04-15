@@ -8,17 +8,17 @@
 
 .title {
   align-self: center;
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   font-weight: 900;
 }
 
 .meta {
-  font-size: 0.75rem;
+  font-size: 1.25rem;
   opacity: 0.6;
 }
 
 .description {
-  font-size: 0.85rem;
+  font-size: 1.8rem;
 }
 
 .readMore {
@@ -26,7 +26,7 @@
   display: inline-flex;
   margin-top: 1rem;
   border-radius: 3px;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   text-align: center;
   border-bottom: 0 !important;
   text-decoration: none !important;

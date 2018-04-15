@@ -19,19 +19,10 @@ const Header = (props, { metadata: { pkg } }) => (
           className={ styles.link }
           to={ "/" }
         >
-          { "Home" }
+          { "AKT" }
         </Link>
       </div>
       <div className={ styles.navPart2 }>
-        {
-          pkg.twitter &&
-          <a
-            href={ `https://twitter.com/${pkg.twitter}` }
-            className={ styles.link }
-          >
-            <Svg svg={ twitterSvg } cleanup />
-          </a>
-        }
         {
           pkg.linkedin &&
           <a
@@ -48,6 +39,15 @@ const Header = (props, { metadata: { pkg } }) => (
             className={ styles.link }
           >
             <Svg svg={ stackoverflowSvg } cleanup />
+          </a>
+        }
+        {
+          pkg.repository &&
+          <a
+            href={ pkg.repository }
+            className={ styles.link }
+          >
+            <Svg svg={ gitHubSvg } cleanup />
           </a>
         }
         {
@@ -69,12 +69,12 @@ const Header = (props, { metadata: { pkg } }) => (
           </a>
         }
         {
-          pkg.repository &&
+          pkg.twitter &&
           <a
-            href={ pkg.repository }
+            href={ `https://twitter.com/${pkg.twitter}` }
             className={ styles.link }
           >
-            <Svg svg={ gitHubSvg } cleanup />
+            <Svg svg={ twitterSvg } cleanup />
           </a>
         }
       </div>
