@@ -6,6 +6,8 @@ import twitterSvg from "../icons/iconmonstr-twitter-1.svg"
 import gitHubSvg from "../icons/iconmonstr-github-1.svg"
 import instaSvg from "../icons/insta.svg"
 import mediumSvg from "../icons/medium.svg"
+import linkedinSvg from "../icons/linkedin.svg"
+import stackoverflowSvg from "../icons/stackoverflow.svg"
 
 import styles from "./index.css"
 
@@ -28,7 +30,6 @@ const Header = (props, { metadata: { pkg } }) => (
             className={ styles.link }
           >
             <Svg svg={ twitterSvg } cleanup />
-            { "Twitter" }
           </a>
         }
         {
@@ -37,8 +38,7 @@ const Header = (props, { metadata: { pkg } }) => (
             href={ `https://www.linkedin.com/in/${pkg.linkedin}` }
             className={ styles.link }
           >
-            <Svg svg={ twitterSvg } cleanup />
-            { "Linkedin" }
+            <Svg svg={ linkedinSvg } cleanup />
           </a>
         }
         {
@@ -47,7 +47,7 @@ const Header = (props, { metadata: { pkg } }) => (
             href={ `https://stackoverflow.com/users/${pkg.stackoverflow}` }
             className={ styles.link }
           >
-            { "Stack Overflow" }
+            <Svg svg={ stackoverflowSvg } cleanup />
           </a>
         }
         {
@@ -57,7 +57,6 @@ const Header = (props, { metadata: { pkg } }) => (
             className={ styles.link }
           >
             <Svg svg={ mediumSvg } cleanup />
-            { "Medium" }
           </a>
         }
         {
@@ -67,7 +66,6 @@ const Header = (props, { metadata: { pkg } }) => (
             className={ styles.link }
           >
             <Svg svg={ instaSvg } cleanup />
-            { "Instagram" }
           </a>
         }
         {
@@ -77,7 +75,6 @@ const Header = (props, { metadata: { pkg } }) => (
             className={ styles.link }
           >
             <Svg svg={ gitHubSvg } cleanup />
-            { "GitHub" }
           </a>
         }
       </div>
