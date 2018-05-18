@@ -5,7 +5,6 @@ layout: Post
 hero: https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f6e5055d9ad1d603fd364c11823d026&auto=format&fit=crop&w=2852&q=80
 ---
 
-# HTTP Cache Directives: Explained with history
 
 The other day I was trying to understand about different HTTP Cache headers and
 how it’s working. The answers I found was varied for different people. So I
