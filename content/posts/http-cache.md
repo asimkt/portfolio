@@ -18,14 +18,16 @@ Let’s say you hosted a website called ourfamily.com and you created the site i
 your username and password and will show you a beautiful family photo. ie, in
 your browser, you’ll enter your username and password and browser will send this
 **request** to the server which is hosted somewhere and the server will give you
-a **response** telling whether you are authorized or not to see the image.<br>
+a **response** telling whether you are authorized or not to see the image.
+
 Now, what’s cache had to do with all this? The internet is slow that the browser
 and server have to talk to each other about everything and it can’t take that
 much time and bandwidth. So for most of this talking, if the browser already
 knows the answer, it shouldn’t ask the question to the server. Just like,
 whenever you refresh the family photo page, the browser doesn’t have to wait or
-ask the server for the same photo to be sent through the network.<br> But in
-this big world, when browser and server sitting on two different continents,
+ask the server for the same photo to be sent through the network.
+
+In this big world, when browser and server sitting on two different continents,
 this talking is more expensive. And if the number of pictures is high and
 everyone may want the same picture, like in the case of a newspaper, talking
 cannot be this much expensive. So people installed some small intermediate
@@ -33,21 +35,22 @@ servers. The browser will ask for information to these proxies which will get
 the information from the original server first, and whenever the second request
 comes, maybe from same browser or another browser for the same information, they
 will give the information instantly without going back to the original servers.
-This added an extra speed to the communication between servers and browsers.<br>
-But this architecture has some security issues also. These Proxy Caches aren’t
+This added an extra speed to the communication between servers and browsers.
+
+This architecture has some security issues also. These Proxy Caches aren’t
 supposed to cache everything browser and server talking because they may be
 passing some sensitive information also, like username and passwords. These
 talking are based on the HTTP and we could control caching by setting some
 headers on the HTTP **request**s and **response**s.
 
-1.  `Pragma: no-cache`
+1.`Pragma: no-cache`
 
 We *had* `Pragma: no-cache`in HTTP 1.0 **requests** (Not response). This is for
 telling intermediate cache ‘not to cache this request’ maybe this communication
 contains sensitive information like username and passwords or caching this had
 no advantage for a proxy-cache.
 
-2. `Expires`
+2.`Expires`
 
 Another HTTP 1.0 header to tell browsers when the page will be expired. This is
 a **response** directive. ie the server set this header in the **response**.
@@ -56,7 +59,9 @@ intact. Browser and Proxy caches can cache it in their memory.
 
 Then HTTP 1.1 came out in 1997 with upgraded headers.
 
-3. `cache-control: public`<br> Let’s say you have a public page, like a login
+3.`cache-control: public`
+
+Let’s say you have a public page, like a login
 page. or a public resource, like family logo which can be stored by any cache,
 browser or not. So most of the time people try to get the resource will hit the
 cache and won’t direct hit the server and we get a performance boost.
@@ -76,15 +81,15 @@ as public and the browser’ll only show that instead of your new one. Now we’
 have the most badly named spec (I think) in cache directives to rescue. We could
 use `cache-control: public; no-cache;` for the login page. no-cache will tell
 the browser that ‘Hey, you can cache this page, but before you show this to the
-user, just let the server know. If server changed the page server’ll give you
-the updated one.` Now we can save bandwidth instead of downloading the new page
+user, just let the server know. If server changed the page server will give you
+the updated one.' Now we can save bandwidth instead of downloading the new page
 every time.
 
 This naming is so bad that some browsers even start to implement cache
 architecture that if `no-cache` is present, they won’t use the cache at all,
 instead, they will download a fresh copy from server every time.
 
-5. `cache-control: no-store`
+6. `cache-control: no-store`
 
 Now you want a completely no-cached page. Like some page where your family
 business revenue is shown And you know `no-cache` is not the answer. `no-store`
@@ -118,7 +123,9 @@ browser in any circumstances browser should revalidate the resource. There’s a
 
 *****
 
-**Browser Validators**<br> Now, we’ve talked about re-validating the resource by
+**Browser Validators**
+
+Now, we’ve talked about re-validating the resource by
 contacting server. How will the browser know that the resource is still valid?
 We’ve two ways to do that. `ETag` and `Last-Modified` headers are used as these
 validators. Every resource are send with these values from the server. And when
@@ -132,15 +139,3 @@ tell that resource is still not changed and can continue to use that.
 I think I kind of explained these things. I got the information from different
 articles and talked about here. Please let me know if I am incorrect or things
 have been changed over time. Thank you.
-
-* [Web Development](https://medium.com/tag/web-development?source=post)
-* [Http Request](https://medium.com/tag/http-request?source=post)
-* [Http Cache](https://medium.com/tag/http-cache?source=post)
-* [Cache](https://medium.com/tag/cache?source=post)
-
-From a quick cheer to a standing ovation, clap to show how much you enjoyed this
-story.
-
-### [Asim KT](https://medium.com/@KTAsim)
-
-Front End dev | MESCIAN |Proud Indian | Music maniac | Being straight
