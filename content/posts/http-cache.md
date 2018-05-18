@@ -1,8 +1,9 @@
 ---
 title: HTTP Cache Directives: Explained with history
 date: 2018-05-18
-layout: post
+layout: Post
 ---
+
 # HTTP Cache Directives: Explained with history
 
 The other day I was trying to understand about different HTTP Cache headers and
