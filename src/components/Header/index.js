@@ -51,6 +51,15 @@ const Header = (props, { metadata: { pkg } }) => (
           </a>
         }
         {
+          pkg.mastodon &&
+          <a
+            href={ pkg.mastodon }
+            className={ styles.link }
+          >
+            M
+          </a>
+        }
+        {
           pkg.medium &&
           <a
             href={ `https://medium.com/@${pkg.medium}` }
