@@ -50,15 +50,7 @@ const Header = (props, { metadata: { pkg } }) => (
             <Svg svg={ gitHubSvg } cleanup />
           </a>
         }
-        {
-          pkg.mastodon &&
-          <a
-            href={ pkg.mastodon }
-            className={ styles.link }
-          >
-            M
-          </a>
-        }
+<a rel="me" href="https://mastodon.social/@ktasim">M</a>
         {
           pkg.medium &&
           <a
