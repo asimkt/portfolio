@@ -22,7 +22,9 @@ In my free time, I created things like:
 
 * [Zpeed](https://zpeed.in/): A Progressive Web App (PWA) for seeing your real-time speed. Sure to check this out when you go cycling/riding next time.
 * [Image Baker](https://img-bak.in/): A tool for Android & iOS devs to create their assets in all different sizes needed.
-* [Heic converter](https://converter.asimkt.com/): A tool to convert the new iPhone Heic format to Jpeg.
-* [Cashcovery](https://cashcovery.asimkt.com/): Find Nearby ATMs in a click - A tool for instantly find nearby ATMs for quick discovery of cash. I’m still working on the name.
+* [Heic converter](https://converter.ktasim.com/): A tool to convert the new iPhone Heic format to Jpeg.
+* [Cashcovery](https://cashcovery.ktasim.com/): Find Nearby ATMs in a click - A tool for instantly find nearby ATMs for quick discovery of cash. I’m still working on the name.
+
+
 
 ---
