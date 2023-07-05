@@ -50,7 +50,6 @@ const Header = (props, { metadata: { pkg } }) => (
             <Svg svg={ gitHubSvg } cleanup />
           </a>
         }
-<a rel="me" href="https://mastodon.social/@ktasim">M</a>
         {
           pkg.medium &&
           <a
