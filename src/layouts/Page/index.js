@@ -55,6 +55,7 @@ const Page = (
     heroClasses.push(styles['header-full-height']);
   return (
     <div className={ styles.page }>
+  <a rel="me" href="https://mastodon.social/@ktasim"></a>
       <Helmet
         title={ metaTitle }
         meta={ meta }
